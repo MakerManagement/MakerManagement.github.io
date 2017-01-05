@@ -113,7 +113,7 @@ h3 {
 }
 
 #header {
-	width: 750px;
+	width: 1400px;
 	margin: 40px auto 50px auto;
 }
 #header h1 {
@@ -275,9 +275,9 @@ img.center {
 }
  
 .icon-sun:before { content: '\e801'; }
-.icon-anchor:before { content: '\e800'; }
+.icon-anchor:before { content: 'Link to article'; width: 7.5em;}
 .icon-anchor {
-	font-size: 65%;
+	font-size: 50%;
 }
 
 

@@ -1,51 +1,121 @@
+/*
+ ### Fonts for the webpage ###
+*/
+@font-face {
+	font-family: britannic-bold;
+	src: url(../fonts/britannic-bold.ttf);
+}
+
+@font-face {
+	font-family: impact;
+	src: url(../fonts/impact.ttf);
+}
+
+@font-face {
+	font-family: kozuka;
+	src: url(../fonts/kozuka-gothic-pro-b.otf);
+}
+
+@font-face {
+	font-family: microsoft_yahei;
+	src: url(../fonts/microsoft-yahei.ttf);
+}
+
+@font-face {
+	font-family: segoe_light;
+	src: url(../fonts/segoe-ui-light.ttf);
+}
+
 html, body {
-	background-color: #002a35;
-	color: #839496;
+	background-color: #ffffcc;
+	color: #533419;
 }
 
 a, a:visited, a:active {
-	color: #2aa198;
+	color: #a45209;
 	border-color: #073642;
 }
 
 a:hover {
-	background-color: #073642;
-	border-color: #073642;
-	color: #2aa198;
+	background-color: #e1d4c0;
+	border-color: #e1d4c0;
+	color: #a45209;
 }
 
 h1, h2, h3 {
-	color: #cb4b16;
+	color: #ff6600;
 }
 
 h1 a, h1 a:visited, h1 a:active {
-	color: #cb4b16;
+	color: #ff6600;
 }
 
 h1 a:hover {
-	background-color: #073642;
-	border-color: #073642;
-	color: #cb4b16;
+	background-color: #ffcc33;
+	border-color: #ffcc33;
+	color: black;
 }
 
 article h1 a.anchor {
-	color: #2aa198;
+	color: #533419;
 }
 
 blockquote {
-	border-color: #cb4b16;
+	border-color: #ff6600;
 }
 
 #sidebar a:hover {
-	color: #2aa198;
-	background-color: #073642;
+	color: #a45209;
+	background-color: #ffcc33;
 }
 
 #footer {
 	border-color: #073642;
 }
 
+/* Main content */
+#content p {
+	font-family: segoe_light, serif;
+	font-size: large;
+}
 
+/* Main header (H1) */
+#mainHeader a {
+	font-size: 140%;
+}
+
+header p {
+	font-size: 200%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#mainHeader {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#content h1 {
+	font-family: impact, serif;
+	font-size: 250%;
+}
+
+/* Sidebar links */
+#sidebar ul a {
+	font-family: impact, serif;
+	font-size: 200%;
+}
+
+#external-links-content a {
+	font-size: 150%;
+}
+
+#blog-archives a {
+	font-size: 90%;
+	font-family: segoe_light, serif;
+	color: #a45209;
+	text-decoration-color: black;
+}
 
 /*** Pygments ***/
 .highlight{
