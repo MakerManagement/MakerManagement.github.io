@@ -1,0 +1,8 @@
+---
+layout: post
+title: Test post!
+date: 2017-01-09 17:27:00
+author: thomas
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis consectetur porta. Sed porttitor sollicitudin ex ac maximus. Duis at fringilla velit. Quisque lacus massa, volutpat nec massa quis, feugiat commodo neque. In ultricies hendrerit dapibus. Vivamus sed dolor in dui malesuada porttitor. Vivamus gravida vehicula massa, in imperdiet nisl consequat nec. Donec varius neque at massa tincidunt, ac eleifend leo semper. Curabitur libero turpis, fringilla quis ex eu, tincidunt finibus sapien. Nam molestie lacus orci, eget cursus arcu dapibus vel. Aenean consequat neque id lacus euismod imperdiet.
