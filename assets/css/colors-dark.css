@@ -117,6 +117,11 @@ header p {
 	text-decoration-color: black;
 }
 
+#header a:hover {
+	background-color: transparent;
+	color: #ff6600;
+}
+
 /*** Pygments ***/
 .highlight{
 	background-color: #073642;
