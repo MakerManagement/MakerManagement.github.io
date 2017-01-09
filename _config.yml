@@ -5,5 +5,15 @@ description: A inventory system for makerspaces
 permalink: /:year/:month/:day/:title/
 paginate: 10
 
+future: true
+
 gems: [jekyll-paginate]
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+authors:
+  thomas:
+    display_name: Thomas M. Bergby
+    gravatar: 9ca01558224b33d8951bb31cdeef2940
+    email: thomas.bergby@gmail.com
+    web: bergby.net
+    github: thobber

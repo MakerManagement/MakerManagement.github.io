@@ -5,15 +5,33 @@ layout: default
 
 	{% if page.external-url %}
 		<h1>
-			<a href="{{ page.url }}">{{ page.title }}</a>
+			{{ page.title }}
 		</h1>
 	{% else %}
-		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+		<h1>{{ page.title }}</h1>
 	{% endif %}
+
+	{% assign author = site.authors[page.author] %}
 
 	<div class="post-content">{{ content }}</div>
 
-	<p class="meta"><a href="{{ page.external-url }}">Link to article</a> </p>
+	{% if page.external-url %}
+	<h1>
+		<p class="meta"><a href="{{ page.external-url }}">Link to external article</a> </p>
+	</h1>
+	{% endif %}
+	<p class="meta">
+		<!--
+		### Code for support for Gravatars
+		{% if author.gravatar %}
+		<img src="http://www.gravatar.com/avatar/{{ author.gravatar }} ?s=40">
+		<span class="author">{{ author.display_name }}</span>
+		{% else %}
+		<span class="author">{{ author.display_name }}</span>
+		{% endif %}
+		!-->
+		<span class="author">{{ author.display_name }}</span>
+	</p>
 	<p class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span></p>
 
 </article>

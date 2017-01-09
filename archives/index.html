@@ -5,18 +5,18 @@ title: Archives
 
 <div id="blog-archives">
 
-	<h1 id="archives">Archive</h1>
+	<h1 id="archives">Posts</h1>
 
+	<article id="archive-links">
 	{% for post in site.posts %}
-		<article class="post">
 			{% if post.external-url %}
-				<h1>
+				<p>
 					<a href="{{ post.url }}">{{ post.title }}</a>
-				</h1>
+				</p>
 			{% else %}
-				<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+				<p><a href="{{ post.url }}">{{ post.title }}</a></p>
 			{% endif %}
-		</article>
 	{% endfor %}
+	</article>
 
 </div>
