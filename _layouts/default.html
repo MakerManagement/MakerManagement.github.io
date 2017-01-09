@@ -17,32 +17,27 @@
 
 <body>
 
-
+<div id="topNavBar">
+  <nav>
+    <ul class="topnav" id="myTopNav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/the-team">The Team</a></li>
+      <li><a href="/archives">Archive</a></li>
+      <li><a href="/external">External Links</a></li>
+      <li><a href="/feed.xml">RSS Feed</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" style="font-size:15px;" onclick="navBar()">☰</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
   <header id="header">
-    <h1 id="mainHeader"><a href="/"><i class="icon-sun"></i> {{ site.name }}</a></h1>
+    <h1 id="mainHeader"><a><i class="icon-sun"></i> {{ site.name }}</a></h1>
     <p>{{ site.description }}</p>
   </header>
 
-
-
   <div id="page">
-
-
-
-    <div id="sidebar">
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/the-team">The Team</a></li>
-		  <li><a href="/archives">Archive</a></li>
-          <li><a href="/external">External Links</a></li>
-          <li><a href="/feed.xml">RSS Feed</a></li>
-        </ul>
-      </nav>
-    </div>
-
-
 
     <div id="content">
       {{ content }}
@@ -67,6 +62,15 @@
     $(document).ready(function(){
       $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
     });
+
+    function navBar() {
+        var x = document.getElementById("myTopNav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
   </script>
 
 
